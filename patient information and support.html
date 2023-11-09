@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patient information and support</title>
+</head>
+<style>
+    * {
+
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .sidebar {
+        position: absolute;
+        background-color: white;
+        width: 175px;
+        height: 70vh;
+        transition: transform 0.3s ease-in;
+    }
+
+    .main {
+        width: 90vw;
+        padding: 23px;
+    }
+
+    .sidebar nav {
+        padding: 20px;
+    }
+
+    .sidebar nav li {
+        list-style: none;
+        font-size: 20px;
+        padding: 20px 0px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: bold;
+    }
+
+    .sidebar nav li a {
+        text-decoration: none;
+        color: rgb(28, 10, 10);
+    }
+
+    .container {
+        display: flex;
+        background-image: linear-gradient(rgb(42, 164, 225), rgb(251, 139, 139));
+        color: rgb(21, 10, 10);
+        overflow-y: scroll;
+    }
+
+    .info {
+        height: 50vh;
+        width: 80vw;
+        margin: 144px auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 134px;
+    }
+
+    .devinfo {
+        margin-top: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    .patient-info h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+
+    .sidebarGo {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        left: 10px;
+    }
+
+    .cross {
+        margin-left: 135px;
+    }
+
+    @media (max-width: 1200px) {
+            {
+            background-color: rgb(251, 98, 98);
+        }
+
+        .contactform,
+        .Aboutmecontainer,
+        .blogcontainer {
+            margin: 50px 8px;
+            overflow: auto;
+            font-size-adjust: inherit;
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <div class="container">
+            <Div class="sidebar sidebarGo">
+
+                <nav>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about-us.html">About-Us</a></li>
+                        <li><a href="./department.html">Department</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./doctors and staff.html">Doctors and Staff</a></li>
+                        <li><a href="./patient information and support.html">Patient Information and Support</a></li>
+                        <li><a href="./contact.html">Contact-Us</a></li>
+                    </ul>
+                </nav>
+            </Div>
+            <Div class="main">
+                <div class="hamburger">
+                    <img class="ham" src="./img/ham.png" alt="" width="23">
+                    <img class="cross" src="./img/cros.png" alt="" width="13">
+                </div>
+                <div>
+                    <section id="patient-info">
+                        <h2>Patient Information and Support</h2>
+                        <br>
+                        <hr>
+                        <br>
+                        <ul>
+                            <li><strong>Visiting Hours:</strong> Monday to Friday: 9am - 6pm</li>
+                            <br>
+                            <br>
+                            <li><strong>Appointment Booking:</strong> Call our office or book online:
+                                <br>
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="tel" class="form-control" placeholder="Phone Number">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email" class="form-control" placeholder="Enter Email">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="date" class="form-control" placeholder="Enter Date">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="time" class="form-control" placeholder="Enter Email">
+                                        </div>
+                                        <div class="col-12">
+                                            <select class="form-select">
+                                                <option selected>Purpose Of Appointment</option>
+                                                <option value="1">Web Design</option>
+                                                <option value="2">Web Development</option>
+                                                <option value="3">IOS Developemt</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea class="form-control" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="col-12 mt-5">
+                                            <button type="submit" class="btn btn-primary float-end">Book
+                                                Appointment</button>
+                                            <button type="button"
+                                                class="btn btn-outline-secondary float-end me-2">Cancel</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                            <br>
+                            <br>
+                            <li><strong>Insurance Details:</strong> We accept most major insurance plans. Please
+                                contact us for more: <a href="/contact.html"><u>Contact-Us</u></a></li>
+                        </ul>
+                    </section>
+                    <br>
+                    <hr>
+                    <section>
+                        <h2>FAQs</h2>
+
+                        <h2>About Your Symptoms or Diagnosis</h2>
+                        <div>
+                            What is the disease or condition?
+                            How serious is my disease or condition and how will it affect my home and work life?
+                            What is the short-term and long-term prognosis for my disease or condition?
+                            What caused the disease or condition?
+                            Is there more than one disease or condition that could be causing my symptoms?
+                            Should I be tested for a certain disease or condition?
+                            What symptoms should I watch for?
+                            How can I be tested for a disease or condition, and what will these tests tell me?
+                            What tests will be involved in diagnosing my disease or condition?
+                            How safe and accurate are the tests?
+                            When will I know the test’s results?
+                            Will I need more medical tests?
+                            Do I need a follow-up visit and if so, when?
+                            Do I need to take precautions to avoid infecting others?
+                            How is the disease or condition treated?
+                        </div>
+                        <br>
+                        <h2>About Your Treatment</h2>
+                        <div>
+                            What are my treatment options?
+                            How long will the treatment take?
+                            What is the cost of the treatment?
+                            Which treatment is most common for my disease or condition?
+                            Is there a generic form of my treatment and is it as effective?
+                            What side effects can I expect?
+                            What risks and benefits are associated with the treatment?
+                            What would happen if I didn’t have any treatment?
+                            What would happen if I delay my treatment?
+                            Is there anything I should avoid during treatment
+                            What should I do if I have side effects?
+                            How will I know if the medication is working?
+                            What would I do if I miss a dose of medication?
+                            Will my job or lifestyle be affected?
+                            What is my short-term and long-term prognosis?
+                        </div>
+                        <br>
+                        <h2>If You Need Surgery</h2>
+                        <div>
+                            Why do I need surgery?
+                            What surgical procedure are you recommending?
+                            Is there more than one way of performing this surgery?
+                            Are there alternatives to surgery?
+                            How much will surgery cost?
+                            What are the benefits of having surgery?
+                            What are the risks of having surgery?
+                            What if I don’t have this surgery?
+                            Where can I get a second opinion?
+                            What kind of anesthesia will I need?
+                            How long will it take me to recover?
+                            What are your qualifications?
+                            How much experience do you have performing this surgery?
+                            How long will I be in the hospital?
+                        </div>
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <h2>Patient Guides</h2>
+                        <div>
+                            To promote stronger engagement, Agency for Healthcare Research and Quality developed
+                            the Guide to Patient and Family Engagement in Hospital Quality and Safety, a tested,
+                            evidence-based resource to help hospitals work as partners with patients and
+                            families to improve quality and safety.
+                        </div>
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <h2>Support Services</h2>
+                        <a href="./services.html"><u>Services</u></a>
+                    </section>
+                    </main>
+                    <br>
+                    <footer>
+                        <p>&copy; 2023 Patient Resources</p>
+                    </footer>
+                </div>
+                <script src="script.js"></script>
+</body>
+
+</html>
